@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_superSearchItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/borderColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorLightGray"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_superSearchOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Carpenter"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner:"
+                    android:textColor="@color/darkGray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_superSearchOwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="Nandan Vartak"
+                    android:textColor="@color/darkGray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating:"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_superSearchRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="4.5"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_clientPhone"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/iv_clientPhne"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:padding="3dp"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+</LinearLayout>

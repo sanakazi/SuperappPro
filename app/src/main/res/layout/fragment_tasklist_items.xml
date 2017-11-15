@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGrayLevel4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_designerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_designerCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Raapchik Interior"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Designer Name"
+                    android:textColor="@color/summerSky"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_designerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Nandan"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_designerPhone"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:src="@drawable/call" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Udipi Restaurant"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:id="@+id/tv_ProjectType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Commercial"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/address" />
+
+            <TextView
+                android:id="@+id/tv_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="35/laxmi niwas,49/50 gakhaleroad noarth, \ndadar west,mumbai 400034"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/materials"
+            android:textColor="@color/deepSkyBlue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_materials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="5dp"
+            android:text="No Material Added"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_taskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/taskDescription"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_taskDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:paddingRight="5dp"
+                android:text="that pleasuresduty or cumstance and owing to the claims of duty orduty or the business"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_taskNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/taskNote"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_taskNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:paddingRight="5dp"
+                android:text="the claims of duty orduty or the business"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:text="@string/suitableDateAndTime"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="12/06/2016"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="2dp"
+                    android:text="12.30 PM"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="status:"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:padding="2dp"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!--ll_Request-->
+        <LinearLayout
+            android:id="@+id/ll_Request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/bt_Reject"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_pressed"
+                android:text="@string/reject"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt_Accept"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_pressed_pink"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/acknowledge"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <!--ll_Accept-->
+        <LinearLayout
+            android:id="@+id/ll_Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/bt_Process"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_pressed_yellow"
+                android:text="@string/inProcess"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!--ll_Process-->
+        <LinearLayout
+            android:id="@+id/ll_Process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+
+            <Button
+                android:id="@+id/bt_Pending"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/button_pressed_red"
+                android:text="@string/pending"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_Delayed"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/button_pressed_orange"
+                android:text="@string/delayed"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_Process_JobDone"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/button_pressed"
+                android:text="@string/jobDone"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!--ll_Pending-->
+        <LinearLayout
+            android:id="@+id/ll_Pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/bt_Pending_JobDone"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_pressed"
+                android:text="@string/jobDone"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!--ll_Delayed-->
+        <LinearLayout
+            android:id="@+id/ll_Delayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/bt_Delayed_JobDone"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_pressed"
+                android:text="@string/jobDone"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

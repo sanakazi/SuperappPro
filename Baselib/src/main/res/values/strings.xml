@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaseLib</string>
+    <string name="title_activity_image_cropping">Crop Image</string>
+</resources>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="@string/detail1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/close" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightGray"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category :"
+                            android:textColor="@color/darkGray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_superSearchDetailCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="Individual"
+                            android:textColor="@color/darkGray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Rating:"
+                        android:textColor="@color/green"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="4.5"
+                        android:textColor="@color/green"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_superSearchDetailBusinessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bussiness Name :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailBusinessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="Nandan Vartak"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailOwnerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="Nandan Vartak"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Occupation/What do we sell! :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailOccupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Individual"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_preferredLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preferred Work Location :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="test"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_specialFeatures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Special features / quality :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailSpclFeatures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Individual"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_workingHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Working Hours :"
+                            android:textColor="@color/darkGray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="From"
+                            android:textColor="@color/green"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_superSearchDetailFrom"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="10:50 AM"
+                            android:textColor="@color/darkGray"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textColor="@color/darkGray"
+                            android:textSize="12sp" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="To"
+                            android:textColor="@color/green"
+
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_superSearchDetailTo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="07:00 PM"
+                            android:textColor="@color/darkGray"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Closed On :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailClosedOn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="Monday"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/address" />
+
+                    <TextView
+                        android:id="@+id/tv_clientAddressSuperSearchDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="35/laxmi niwas,49/50 gakhaleroad noarth, \ndadar west,mumbai 400034"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_locality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locality :"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailLocality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Jaipur"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_ratingIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_pressed_summer_sky"
+                    android:padding="2dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/textButton"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Rating"
+                        android:textColor="@color/summerSky" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorLightGray"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:stepSize="1.0"
+                        android:theme="@style/RatingBar" />
+
+                    <Button
+                        android:id="@+id/bt_submit"
+                        style="@style/textButton"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/submit"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_coworkersRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Co-worker's Rating"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Rating:"
+                        android:textColor="@color/green"
+                        android:textSize="12sp" />-->
+
+                    <TextView
+                        android:id="@+id/tv_superSearchDetailCoworkersRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="4.5"
+                        android:textColor="@color/summerSky"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/borderColor">
+
+                    <ImageView
+                        android:id="@+id/iv_callSuperSearchDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/call" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_telephoneSuperSearchDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/telephone" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_mailSuperSearchDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/mail" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_webSuperSearchDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/web" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_searchItemDetailImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <ImageView
+                    android:id="@+id/iv_searchItemDetail"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

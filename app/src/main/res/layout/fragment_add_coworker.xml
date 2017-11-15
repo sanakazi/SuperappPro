@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGrayLevel3"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCoWorkerName"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_coWorkerName"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Name*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coworkerOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutCoWorkerOccupation"
+                style="@style/textInputLayout"
+                android:paddingBottom="0.5dp">
+
+                <EditText
+                    android:id="@+id/et_coWorkerOccupation"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/category"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Occupation*"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorLightGray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+91"
+                android:textColor="@color/black" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutCoWorkerMobile"
+                style="@style/textInputLayout"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_coWorkerMobile"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:hint="Mobile*"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCoWorkerEmail"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_coWorkerEmail"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCoWorkerAddress"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_coWorkerAddress"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Address*"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorLightGray"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_sameAsAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_background"
+                android:paddingLeft="10dp"
+                android:text="@string/sameAsAddress" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCoWorkerNativeAddress"
+            style="@style/textInputLayout"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/et_coWorkerNativeAddress"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/nativeAddress"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCoWorkerPanNumber"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_coWorkerPanNumber"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/panNumber"
+                android:inputType="text"
+                android:maxLength="10"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coworkerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutCoWorkerPanNumberPhotoId"
+                style="@style/textInputLayout">
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/uploadYourId"
+                    android:textColor="@color/green"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="100px X 60px"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/image_background"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_addCoWorkerPanNumberPhotoId"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coworkerPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutCoWorkerPhoto"
+                style="@style/textInputLayout">
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/uploadYourPhoto"
+                    android:textColor="@color/green"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="100px X 100px"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/image_background"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_addCoWorkerPhoto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCoWorkerReferredBy"
+            style="@style/textInputLayout"
+            android:layout_marginBottom="0.5dp">
+
+            <EditText
+                android:id="@+id/et_coWorkerReferredBy"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/referredBy"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coworkerRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/colorLightGray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/rating"
+                android:textColor="@color/green"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorLightGray"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_addCoworker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/bt_addCoWorkerProject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorLightGray"
+                        android:gravity="center"
+                        android:text="@string/done"
+                        android:textAllCaps="true"
+                        android:textColor="@color/floatingButtonColor"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addCoWorker"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/floatingbutton_background"
+                        android:padding="5dp"
+                        android:src="@drawable/add_new" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--</LinearLayout>-->
+
+
+</ScrollView>

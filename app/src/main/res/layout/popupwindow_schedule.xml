@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGrayLevel4"
+        android:orientation="vertical"
+        android:padding="0.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_setTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/setSchedule"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:padding="12dp"
+                android:src="@drawable/close" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/borderColor"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Job*"
+                            android:textColor="@color/grey" />
+
+                        <Spinner
+                            android:id="@+id/spinner_ScheduleLineOfWork"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_otherCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/otherJob"
+                            android:textColor="@color/green" />
+
+                        <EditText
+                            android:id="@+id/et_otherCategory"
+                            style="@style/fragmentDashboardInnerEditText"
+                            android:layout_marginLeft="12dp"
+                            android:background="@color/white"
+                            android:inputType="textCapWords"
+                            android:maxLength="50"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/green"
+                            android:textSize="16sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scheduleEndDate"
+                            android:textColor="@color/green"
+                            android:textColorHint="@color/green" />
+
+                        <EditText
+                            android:id="@+id/et_ScheduleEndDate"
+                            style="@style/fragmentDashboardInnerEditText"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:inputType="date"
+                            android:maxLength="15"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TableRow
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="1dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0.5dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingRight="8dp"
+
+                                android:textColorHint="@color/colorTextHintColor">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Start Date*"
+                                    android:textColor="@color/grey"
+                                    android:textColorHint="@color/green" />
+
+                                <EditText
+                                    android:id="@+id/et_StartDate"
+                                    style="@style/fragmentDashboardInnerEditText"
+                                    android:background="@color/white"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/green"
+                                    android:textSize="16sp" />
+
+                                <ImageView style="@style/fragmentDashboardInnerView" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0.5dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:textColorHint="@color/colorTextHintColor">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Start Time*"
+                                    android:textColor="@color/grey"
+                                    android:textColorHint="@color/green" />
+
+                                <EditText
+                                    android:id="@+id/et_startTime"
+                                    style="@style/fragmentDashboardInnerEditText"
+                                    android:background="@color/white"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/green"
+                                    android:textSize="16sp" />
+
+                                <ImageView style="@style/fragmentDashboardInnerView" />
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="1dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0.5dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingRight="8dp"
+
+                                android:textColorHint="@color/colorTextHintColor">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="End Date*"
+                                    android:textColor="@color/grey"
+                                    android:textColorHint="@color/green" />
+
+                                <EditText
+                                    android:id="@+id/et_endDate"
+                                    style="@style/fragmentDashboardInnerEditText"
+                                    android:background="@color/white"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/green"
+                                    android:textSize="16sp" />
+
+                                <ImageView style="@style/fragmentDashboardInnerView" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0.5dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:textColorHint="@color/colorTextHintColor">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="End Time*"
+                                    android:textColor="@color/grey"
+                                    android:textColorHint="@color/green" />
+
+                                <EditText
+                                    android:id="@+id/et_endTime"
+                                    style="@style/fragmentDashboardInnerEditText"
+                                    android:background="@color/white"
+                                    android:clickable="true"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/green"
+                                    android:textSize="16sp" />
+
+                                <ImageView style="@style/fragmentDashboardInnerView" />
+                            </LinearLayout>
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_subCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Work Scope*"
+                            android:textColor="@color/grey" />
+
+                        <Spinner
+                            android:id="@+id/spinner_ScheduleFurtherCategories"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_otherSubCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/otherWorkScope"
+                            android:textColor="@color/green" />
+
+                        <EditText
+                            android:id="@+id/et_otherSubCategory"
+                            style="@style/fragmentDashboardInnerEditText"
+                            android:layout_marginLeft="12dp"
+                            android:background="@color/white"
+                            android:inputType="textCapWords"
+                            android:maxLength="50"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/green"
+                            android:textSize="16sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/description"
+                            android:textColor="@color/grey" />
+
+                        <EditText
+                            android:id="@+id/et_ScheduleDescription"
+                            style="@style/fragmentDashboardInnerEditText"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:gravity="left|top"
+                            android:maxLength="500"
+                            android:maxLines="5"
+                            android:minLines="2"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/bt_ScheduleSubmit"
+                            style="@style/textButton"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button_pressed"
+                            android:text="@string/submit"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

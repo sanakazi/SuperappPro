@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrayLevel3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/projectOverview"
+                            android:textColor="@color/deepSkyBlue"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_download"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="8dp"
+                            android:padding="1dp"
+                            android:src="@drawable/download"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_projectShowHide"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="1dp"
+                            android:src="@drawable/minus" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_projectName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/black"></View>
+
+                        <TextView
+                            android:id="@+id/tv_projectType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_projectDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/address" />
+
+                            <TextView
+                                android:id="@+id/tv_projectAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/designStartDate"
+                            android:textColor="@color/deepSkyBlue"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_projectDesignStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/black"></View>
+
+                            <TextView
+                                android:id="@+id/tv_projectDesignStartedDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="Days Since Designing"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/executionStartDate"
+                            android:textColor="@color/deepSkyBlue"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_projectExecutionStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/black"></View>
+
+                            <TextView
+                                android:id="@+id/tv_projectExecutionStartedDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="Days Since Execution"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/estimatedHandoverDate"
+                                    android:textColor="@color/deepSkyBlue"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_projectHandoverDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@color/black"></View>
+
+                                    <TextView
+                                        android:id="@+id/tv_projectHandoverDaysLeft"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="4dp"
+                                        android:text="Days For Completion"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_editEstimatedHandoverDate"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:padding="1dp"
+                                android:src="@drawable/edit" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_totalMoneyPaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Money Paid - "
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_projectClientPaidAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_balanceMoneyWithYou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Balance Money - "
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_projectBalanceAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_overBudget"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Over Budget Amount - "
+                                android:textColor="@color/colorRed"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_overBudget"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/colorRed"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <!--Project Percentage Completed-->
+                        <LinearLayout
+                            android:id="@+id/ll_percentageBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:id="@+id/viewFill1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="0" />
+
+                                <TextView
+                                    android:id="@+id/tv_projectCompletedPercent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0%"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/viewEmpty1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="100" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:id="@+id/viewFill2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="3dp"
+                                    android:layout_weight="0"
+                                    android:background="@color/deepSkyBlue" />
+
+                                <View
+                                    android:id="@+id/viewEmpty2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="3dp"
+                                    android:layout_weight="100" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_projectDaysAlert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_completeProject"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button_pressed"
+                            android:gravity="center"
+                            android:text="@string/completeProject"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fragment_project_detail_client" />
+
+        <include layout="@layout/fragment_project_detail_designer" />
+
+        <LinearLayout
+            android:id="@+id/ll_coworkerItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrayLevel3"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorLightGray" />
+    </LinearLayout>
+</ScrollView>

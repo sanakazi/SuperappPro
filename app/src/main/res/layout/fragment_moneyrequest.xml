@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/borderColor"
+        android:orientation="vertical"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_projectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Uidpi Restaurant"
+                android:textColor="@color/orange"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="and when nothing prevents our of duty or thto be we like best, every pleasure is to be welcomedduty or thcumstances and owing to the claims of duty or thduty or business it will frequently occur that pleasuresduty or cumstance and owing to the claims of duty orduty or the business "
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/requestedMoney"
+                    android:textColor="@color/summerSky"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_requestedMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="2,00,000/-"
+                    android:textColor="@color/summerSky"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/bt_accept"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_pressed"
+            android:text="@string/accept" />
+
+        <Button
+            android:id="@+id/bt_reject"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:background="@drawable/button_pressed"
+            android:text="@string/reject" />
+    </LinearLayout>
+</LinearLayout>

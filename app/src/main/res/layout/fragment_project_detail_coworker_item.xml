@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_coWorkerProjectDetailMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGrayLevel3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/coworker"
+                android:textColor="#01CDFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_coworkerShowHide"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="1dp"
+                android:src="@drawable/minus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_coworkerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ramakant Shetty"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:id="@+id/tv_coworkerOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Plumber"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coWorker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/address" />
+
+                <TextView
+                    android:id="@+id/tv_coworkerAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="35/laxmi niwas,49/50 gakhaleroad noarth, \ndadar west,mumbai 400034"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_coworkerEmailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/email"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_coworkerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="shetty67@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/mobile"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_coworkerMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_coworkerPhotoId"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/image_background"
+                    android:padding="2dp"
+                    android:scaleType="center" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6">
+
+                </View>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_SendID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:text="Send ID To Your Client"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_sendId"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="3dp"
+                        android:src="@drawable/send" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

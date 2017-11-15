@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/addMaterial"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:padding="12dp"
+                android:src="@drawable/close" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_addMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="@string/addMaterial"
+            android:maxLength="100"
+            android:maxLines="5"
+            android:minLines="4"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/green"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+
+        <Button
+            android:id="@+id/btn_popUpAddMaterialSubmit"
+            style="@style/textButton"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_pressed"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@color/white" android:state_checked="true"/>-->
+
+    <!--<corners
+        android:radius="25dp"
+        />-->
+    <item android:drawable="@drawable/off1" android:state_checked="false"/>
+
+<item android:drawable="@drawable/on1" android:state_checked="true"></item>
+
+
+
+    <padding
+        android:left="40dp"
+        android:top="40dp"
+        android:right="40dp"
+        android:bottom="40dp"
+        />
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+
+</selector>

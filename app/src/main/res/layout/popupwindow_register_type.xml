@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGrayLevel4"
+        android:orientation="vertical"
+        android:padding="0.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/green"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="@string/selectType"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:padding="12dp"
+                    android:src="@drawable/close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkBox_designer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox_designer_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_background"
+                    android:paddingLeft="10dp"
+                    android:text="@string/designer"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkBox_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox_client_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_background"
+                    android:paddingLeft="10dp"
+                    android:text="@string/client1"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkBox_coWorker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox_coWorker_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_background"
+                    android:paddingLeft="10dp"
+                    android:text="@string/coworker1"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_popUpRegisterDone"
+                    style="@style/textButton"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/done" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

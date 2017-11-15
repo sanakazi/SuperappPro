@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_linear_layout"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Oops !!"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_expiredMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10sp"
+                android:paddingRight="5dp"
+                android:text="Dear User, your paid monthly subscription of SuperApp - Interior Designer has been expired on 21 January, 2017. Please renew your membership to continue using the SuperApp."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_upgradeMembership"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/bg_textbox"
+                android:gravity="center"
+                android:text="@string/upgradeMembership"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/tv_downgradeMembership"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_textbox"
+                android:gravity="center"
+                android:text="@string/downgradeMembership"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/tv_renewMembership"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_textbox"
+                android:gravity="center"
+                android:text="@string/renewMembership"
+                android:textColor="@color/green" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/icon_new" />
+    </FrameLayout>
+
+</ScrollView>

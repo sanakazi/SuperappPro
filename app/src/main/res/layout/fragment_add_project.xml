@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrayLevel3"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutProjectProjectName"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectProjectName"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Project Name*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutProjectLocation"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectLocation"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Location*"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/textInputLayoutProjectTypeOfProject"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectTypeOfProject"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Type Of Project*"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutProjectDesignStartDate"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectDesignStartDate"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Design Start Date*"
+                android:inputType="date"
+                android:maxLength="15"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutProjectExecutionStartDate"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectExecutionStartDate"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Execution Start Date*"
+                android:inputType="date"
+                android:maxLength="15"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutProjectHandoverDate"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectHandoverDate"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Handover Date*"
+                android:inputType="date"
+                android:maxLength="15"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutProjectSetBudget"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_projectSetBudget"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Set Budget*"
+                android:inputType="number"
+                android:maxLength="9"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutProjectSelectClient"
+                style="@style/textInputLayout"
+                android:layout_width="0dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_projectSelectClient"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/category"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Set Client*"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorLightGray"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_addMoreClient"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/floatingbutton_background"
+                    android:padding="10dp"
+                    android:src="@drawable/add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorLightGray"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_spentMoneyToggleForClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:button="@null"
+                android:drawableRight="@drawable/checkbox_background"
+                android:padding="5dp"
+                android:text="@string/spentMoneyToggleForClient"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorLightGray"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_addProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+                <TextView
+                    android:id="@+id/bt_addProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorLightGray"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textAllCaps="true"
+                    android:textColor="@color/floatingButtonColor"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_addProject"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/floatingbutton_background"
+                    android:padding="5dp"
+                    android:src="@drawable/add_new" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#CBCC30</color>
+    <color name="colorAccentDark">#fd0018</color>
+    <color name="transparentActivity">#66000000</color>
+    <color name="gray">#444440</color>
+    <color name="splashColor">#384450</color>
+    <color name="loginBLack">#31312F</color>
+    <color name="black">#000000</color>
+    <color name="inProcessColor">#ffcc00</color>
+    <color name="pendingColor">#ff0000</color>
+    <color name="delayedColor">#ffa500</color>
+    <color name="orange">#FFCC00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textBlack">#36414d</color>
+    <color name="actionBarColor">#2B2722</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparentBlack">#BA000000</color>
+    <color name="green1">#CBCC30</color>
+
+    <color name="green">#b8b92e</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="colorLightGray">#F5F5F5</color>
+    <color name="colorLightGrayLevel2">#E6E6E6</color>
+    <color name="colorLightGrayLevel3">#DDDDDD</color>
+    <color name="colorLightGrayLevel4">#BBBBBB</color>
+    <color name="borderColor">#CCCCCC</color>
+    <color name="colorDarkGreen">#CCCD33</color>
+    <color name="floatingButtonColor">#FF6600</color>
+    <color name="floatingButtonColor1">#FE6700</color>
+    <color name="colorLightGreen">#C4CE3C</color>
+    <color name="colorGreenSurvey">#98CB36</color>
+    <color name="colorPink">#ff00ff</color>
+    <color name="colorTextHintColor">#B3B3B3</color>
+    <color name="whiteTransparent">#BBFFFFFF</color>
+    <color name="darkGray">#333333</color>
+    <color name="midGray">#5A5A5A</color>
+    <color name="deepSkyBlue">#01CDFF</color>
+    <color name="turquoise">#3FFEC6</color>
+    <color name="summerSky">#3FC6FE</color>
+    <color name="turbo">#FBCF15</color>
+    <color name="energyYellow">#FCDB4E</color>
+    <color name="bitterLemon">#CCCD33</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <color name="darkGrey">#666666</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorOrange">#ffa500</color>
+    <color name="colorYellow">#ffcc00</color>
+
+    <color name="multiple_image_select_primary">#2E7D32</color>
+    <color name="multiple_image_select_primaryDark">#1B5E20</color>
+    <color name="multiple_image_select_primaryLight">#C8E6C9</color>
+    <color name="multiple_image_select_accent">#4CAF50</color>
+
+    <color name="multiple_image_select_primaryText">#212121</color>
+    <color name="multiple_image_select_secondaryText">#727272</color>
+    <color name="multiple_image_select_divider">#B6B6B6</color>
+
+    <color name="multiple_image_select_toolbarPrimaryText">#FFFFFF</color>
+
+    <color name="multiple_image_select_albumTextBackground">#99FFFFFF</color>
+    <color name="multiple_image_select_imageSelectBackground">#000000</color>
+
+    <color name="multiple_image_select_buttonText">#FFFFFF</color>
+</resources>

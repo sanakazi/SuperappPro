@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".activity.ActivityMain"
+            tools:showIn="@layout/activity_main_app_bar">
+
+            <include layout="@layout/header_inner" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/main_frame_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/ic_dialog_email" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <FrameLayout
+        android:id="@+id/fragMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

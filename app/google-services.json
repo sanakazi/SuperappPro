@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "55525301170",
+    "firebase_url": "https://super-app-54e19.firebaseio.com",
+    "project_id": "super-app-54e19",
+    "storage_bucket": "super-app-54e19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55525301170:android:d39417f88aaca1da",
+        "android_client_info": {
+          "package_name": "com.superapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55525301170-b71l8cjqouj681o9ud7nrtn61mucstap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw3Mxkbf9WFPjF5M4ZO0IMFAohbtbTeuQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55525301170:android:4489862111954c1d",
+        "android_client_info": {
+          "package_name": "com.superapppro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55525301170-b71l8cjqouj681o9ud7nrtn61mucstap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw3Mxkbf9WFPjF5M4ZO0IMFAohbtbTeuQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

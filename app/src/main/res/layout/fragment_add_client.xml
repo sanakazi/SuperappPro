@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGrayLevel3"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutClientFullName"
+                style="@style/textInputLayout"
+                app:errorEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_clientFullName"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:hint="Full Name*"
+                    android:inputType="textCapWords"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <ImageView style="@style/fragmentDashboardInnerView" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutClientGender"
+                style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/et_clientGender"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/category"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Gender*"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutClientEmail"
+                style="@style/textInputLayout"
+                app:errorEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_clientEmail"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:hint="Email*"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorLightGray"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+91"
+                    android:textColor="@color/black" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutClientMobile"
+                    style="@style/textInputLayout">
+
+                    <EditText
+                        android:id="@+id/et_clientMobile"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:hint="Mobile*"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutClientAddressType"
+                style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/et_clientAddressType"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/category"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Address Type"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutClientAddress"
+                style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/et_clientAddress"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/category"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Address"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutClientAlternateContact"
+                style="@style/textInputLayout">
+
+                <EditText
+                    android:id="@+id/et_clientAlternateContact"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:hint="@string/alternateContactName"
+                    android:inputType="textCapWords"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorLightGray"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+91"
+                    android:textColor="@color/black" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutClientAlternateContactsMobile"
+                    style="@style/textInputLayout"
+                    android:layout_marginBottom="0.5dp">
+
+                    <EditText
+                        android:id="@+id/et_clientAlternateContactsMobile"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:hint="Alternate Contact Mobile"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorLightGray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightGray"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_addClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tv_addClient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorLightGray"
+                        android:gravity="center"
+                        android:text="@string/done"
+                        android:textAllCaps="true"
+                        android:textColor="@color/floatingButtonColor"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addClient"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/floatingbutton_background"
+                        android:padding="5dp"
+                        android:src="@drawable/add_new" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

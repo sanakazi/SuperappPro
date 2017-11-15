@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_checklistItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGrayLevel4"
+        android:orientation="vertical"
+        android:paddingBottom="0.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp">
+
+            <LinearLayout
+                android:id="@+id/ll_coWorkerDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_coworkerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="laksjflaskjflasjdf"
+                    android:textColor="@color/summerSky"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/black"></View>
+
+                <TextView
+                    android:id="@+id/tv_TaskSubCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/summerSky"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/iv_checklistShowHide"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="right"
+                    android:padding="1dp"
+                    android:src="@drawable/pluse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status :"
+                    android:textColor="@color/summerSky" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checklistDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:text="Materials :"
+                        android:textColor="@color/summerSky" />
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="No Material Added"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/tl_dateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/suitableDate"
+                            android:textColor="@color/summerSky"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/suitableTime"
+                            android:textColor="@color/summerSky"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_suitableDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="12/06/2016"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_tv_suitableTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:text="22:20"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="14sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <!-- <TextView
+                     android:id="@+id/tv_TaskSubCategory"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:textColor="@color/summerSky"
+                     android:textColorHint="@color/summerSky"
+                     android:textSize="15sp" />
+     -->
+
+                <LinearLayout
+                    android:id="@+id/ll_taskDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_taskDescriptionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:text="Description :"
+                        android:textColor="@color/summerSky" />
+
+                    <TextView
+                        android:id="@+id/tv_taskDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:id="@+id/ll_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:text="Note :"
+                        android:textColor="@color/summerSky" />
+
+                    <TextView
+                        android:id="@+id/tv_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

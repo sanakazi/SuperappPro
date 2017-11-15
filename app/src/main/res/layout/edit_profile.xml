@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGrayLevel3"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutName"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Name*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutDesignation"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_designation"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Designation*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCompanyName"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_companyName"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Company Name*"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCompanyStrength"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_companyStrength"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Company Strength*"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="0.5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Email*"
+                android:textColor="#C0C0C0" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:maxLength="50"
+                    android:paddingTop="0dp"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="0.5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Mobile No.*"
+                android:textColor="#C0C0C0" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="+91"
+                android:textColor="@color/black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp">
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutOfficeNo"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_officeNo"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Office No.*"
+                android:inputType="number"
+                android:maxLength="15"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutDateOfBirth"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_dateOfBirth"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Date Of Birth*"
+                android:inputType="date"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCompanyAddress"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_companyAddress"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Company Address*"
+                android:maxLength="100"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_sameAsAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorLightGray"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_sameAsAddress_editProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_background"
+                android:paddingLeft="10dp"
+                android:text="@string/sameAsAddress" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutResidentialAddress"
+            style="@style/textInputLayout"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/et_residentialAddress"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Residential Address*"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutLogo"
+            style="@style/textInputLayout">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadYourLogo"
+                android:textColor="@color/green"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="100px X 60px"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/image_background"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_uploadLogo"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:padding="3dp"
+                        android:scaleType="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPhoto"
+            style="@style/textInputLayout"
+            android:layout_marginBottom="0.5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadYourPhoto"
+                android:textColor="@color/green"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="100px X 100px"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/image_background"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_uploadPhoto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left"
+                        android:padding="3dp"
+                        android:scaleType="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:gravity="center"
+            android:paddingBottom="40dp"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/bt_saveChanges"
+                style="@style/textButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/updateProfile" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrayLevel3"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_personName"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_personName"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Person Name*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_business"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_business"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/businessName"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_occupation"
+            style="@style/textInputLayout"
+            android:paddingBottom="0.5dp">
+
+            <EditText
+                android:id="@+id/et_ss_occupation"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Occupation/Material*"
+                android:inputType="text"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_selectCategory"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_selectCategory"
+                style="@style/fragmentDashboardInnerEditText"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Select Category*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_ss_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorLightGray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+91"
+                android:textColor="@color/black" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_ss_mobile"
+                style="@style/textInputLayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_ss_mobile"
+                    style="@style/fragmentDashboardInnerEditText"
+                    android:hint="Mobile*"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+                <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_officeNumber"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_officeNumber"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/officeNumber"
+                android:inputType="number"
+                android:maxLength="15"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_email"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_email"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_panNumber"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_panNumber"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/panNumber"
+                android:inputType="text"
+                android:maxLength="10"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_website"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_website"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/website"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_addressLine1"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_addressLine1"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:hint="Address line 01*"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_addressLine2"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_addressLine2"
+                style="@style/fragmentDashboardInnerEditText"
+                android:clickable="true"
+                android:hint="Address line 02*"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_selectCountry"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_selectCountry"
+                style="@style/fragmentDashboardInnerEditText"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Select Country*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_selectState"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_selectState"
+                style="@style/fragmentDashboardInnerEditText"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Select State*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_selectCity"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_selectCity"
+                style="@style/fragmentDashboardInnerEditText"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Select City*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_locality"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_locality"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Locality*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_preferredLocation"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_preferredLocation"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="Preferred Location"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_pinCode"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_pinCode"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/pinCode"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_specialFeatures"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_specialFeatures"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/specialFeatures"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorLightGray"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/workingHours"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TableRow>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_ss_workingHourFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGray"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_ss_workingHour_from"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:background="@color/colorLightGray"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/from"
+                        android:inputType="date"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_ss_workingHourTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGray"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_ss_workingHour_to"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:background="@color/colorLightGray"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/to"
+                        android:inputType="time"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+            </TableRow>
+        </TableLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_closedOn"
+            style="@style/textInputLayout">
+
+            <EditText
+                android:id="@+id/et_ss_closedOn"
+                style="@style/fragmentDashboardInnerEditText"
+                android:drawableRight="@drawable/category"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Closed On*"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_id"
+            style="@style/textInputLayout">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/uploadYourId"
+                android:textColor="@color/green"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="100px X 60px"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/image_background"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_ss_id"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:scaleType="center" />
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_photo"
+            style="@style/textInputLayout">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/uploadYourPhoto"
+                android:textColor="@color/green"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="100px X 100px"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/image_background"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_ss_Photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="center" />
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ss_referredBy"
+            style="@style/textInputLayout"
+            android:layout_marginBottom="0.5dp">
+
+            <EditText
+                android:id="@+id/et_ss_referredBy"
+                style="@style/fragmentDashboardInnerEditText"
+                android:hint="@string/referredBy"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView style="@style/fragmentDashboardInnerView"></ImageView>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ss_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/images"
+                android:textColor="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_ss_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_ss_addMore"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/add_more" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightGray"
+                    android:clickable="false"
+                    android:paddingTop="5dp"
+                    android:text="@string/notePhotos"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorLightGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_ss_updateCoworker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tv_ss_updateCoworker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorLightGray"
+                        android:gravity="center"
+                        android:text="@string/update"
+                        android:textAllCaps="true"
+                        android:textColor="@color/floatingButtonColor"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_ss_updateCoworker"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/floatingbutton_background"
+                        android:padding="5dp"
+                        android:src="@drawable/add_new" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrayLevel4"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_addressTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/address"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:padding="12dp"
+                android:src="@drawable/close" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutAddress01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_addressLine01"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="Address line 01*"
+                        android:inputType="textCapSentences"
+                        android:maxLength="25"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutAddress02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_addressLine02"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:background="@color/white"
+                        android:hint="Address line 02*"
+                        android:inputType="textCapSentences"
+                        android:maxLength="25"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutAddress03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_addressLine03"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:background="@color/white"
+                        android:hint="@string/addressLine03"
+                        android:inputType="textCapSentences"
+                        android:maxLength="25"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_city"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:background="@color/white"
+                        android:hint="City*"
+                        android:inputType="textCapSentences"
+                        android:maxLength="19"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayoutPinCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:textColorHint="@color/colorTextHintColor">
+
+                    <EditText
+                        android:id="@+id/et_pinCode"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:background="@color/white"
+                        android:hint="Pincode*"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView style="@style/fragmentDashboardInnerView" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_popUpAddressDone"
+                    style="@style/textButton"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_pressed"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

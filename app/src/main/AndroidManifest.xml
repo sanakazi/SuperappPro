@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.superapp">
+
+    <!--<uses-permission android:name="android.permission.CALL_PHONE" />-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+
+    <application
+        android:name=".ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:name=".activity.ActivitySplash" -->
+        <!-- android:name=".DemoActivity" -->
+        <activity
+            android:name=".activity.ActivitySplash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".activity.ActivityChangeMNumber"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".activity.ActivityChangePassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".activity.registration.ActivityRegistration"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.ActivityForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.registration.ActivityOtpVerification"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".activity.upload.ActivityUpload"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".activity.supersearch.ActivitySuperSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".activity.supersearch.ActivitySearchItemDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+
+        <activity
+            android:name="com.baselib.image_cropping.ActivityImageCropping"
+            android:label="@string/title_activity_image_cropping"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.ActivityMain"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize" -->
+        <activity
+            android:name=".activity.upload.ActivityViewAttachment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.ActivitySurvey"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.ActivityAds"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.ActivityAdminNotification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.ActivityWebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.superapp.paytm.MerchantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".multipleimage.activities.HelperActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".multipleimage.activities.AlbumSelectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".multipleimage.activities.ImageSelectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="382770f794ddc9795d0a92551e524349820fe22a" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--<service-->
+        <!--android:name=".service.ServiceNotification"-->
+        <!--android:enabled="true" />-->
+
+        <service android:name=".fcm.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.FirebaseMessageReceive">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

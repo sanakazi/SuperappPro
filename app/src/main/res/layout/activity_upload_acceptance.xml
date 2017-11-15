@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_approval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA000000"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:src="@drawable/close" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGrayLevel4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/images"
+                        android:textColor="@color/summerSky"
+                        android:textSize="20sp" />
+
+                    <!--  <HorizontalScrollView
+                          android:id="@+id/horizontalScrollView_photos"
+                          android:layout_width="match_parent"
+                          android:layout_height="80dp"
+                          android:layout_marginBottom="10dp"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginRight="10dp"
+                          android:layout_marginTop="5dp">-->
+
+                    <LinearLayout
+                        android:id="@+id/ll_approvalPhotos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                    <!--  </HorizontalScrollView>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/documents"
+                        android:textColor="@color/summerSky"
+                        android:textSize="20sp" />
+
+                    <!-- <HorizontalScrollView
+                         android:layout_width="match_parent"
+                         android:layout_height="80dp"
+                         android:layout_marginTop="10dp">-->
+
+                    <LinearLayout
+                        android:id="@+id/ll_approvalDocuments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                    <!-- </HorizontalScrollView>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textColor="@color/summerSky"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv_approvalDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_approvalComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_approvalComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment"
+                        android:textColor="@color/summerSky"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et_comment"
+                        style="@style/fragmentDashboardInnerEditText"
+                        android:gravity="top|left"
+                        android:maxLength="500"
+                        android:maxLines="5"
+                        android:minLines="2"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_dotLine"
+                        style="@style/fragmentDashboardInnerView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btn_accept"
+                        style="@style/textButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/accept"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_reject"
+                        style="@style/textButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_pressed_orange"
+                        android:text="@string/decline"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_notConvinced"
+                        style="@style/textButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/button_pressed_red"
+                        android:text="@string/notConvinced"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

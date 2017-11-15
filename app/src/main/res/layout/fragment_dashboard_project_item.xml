@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGrayLevel2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edittext"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_projectStartedDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_workStartedDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_projectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text="App and web"
+                android:textColor="@color/black"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_notificationCounter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_edittext"
+                android:gravity="center"
+                android:text="09"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/viewFill1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="68" />
+
+            <TextView
+                android:id="@+id/tv_percentCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="68%"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/viewEmpty1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_percentageBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/viewFill2"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="68"
+                android:background="@color/orange" />
+
+            <View
+                android:id="@+id/viewEmpty2"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="32" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_forCoworker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_projectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:text="App and web"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/address" />
+
+            <TextView
+                android:id="@+id/tv_projectDetailProjectOverViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="35/laxmi niwas,49/50 gakhaleroad noarth, \ndadar west,mumbai 400034"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

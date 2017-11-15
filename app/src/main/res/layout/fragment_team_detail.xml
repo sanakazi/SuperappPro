@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:textColor="@color/deepSkyBlue"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_categoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/address"
+        android:drawablePadding="10dp"
+        android:padding="3dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_mobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:autoLink="phone"
+        android:padding="3dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:autoLink="email"
+        android:padding="3dp"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:autoLink="email"
+        android:padding="3dp"
+        android:textSize="16dp" />
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/iv_Photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/image_background"
+            android:padding="3dp"
+            android:scaleType="fitXY" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_logoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_companyLogo"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_companyName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ad_top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_ad_top"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:src="@drawable/sueprapp_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/iv_sliderButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@drawable/sidebar" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_inner_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="title"
+            android:textAllCaps="true"
+            android:textColor="@color/turbo"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_homeButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@drawable/search" />
+
+        <RelativeLayout
+            android:id="@+id/rl_notification"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="8dp"
+                android:src="@drawable/notifaction" />
+
+            <TextView
+                android:id="@+id/tv_notificationCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_pressed"
+                android:padding="3dp"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_settingButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@drawable/menu_bar" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey" />
+
+</LinearLayout>
+
+
+

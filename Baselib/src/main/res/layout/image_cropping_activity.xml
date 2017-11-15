@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".image_cropping.ActivityImageCropping">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baselib.image_cropping.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            custom:backgroundColor="@color/base"
+            custom:cropMode="ratio_fit_image"
+            custom:frameColor="@color/frame"
+            custom:frameStrokeWeight="1dp"
+            custom:guideColor="@color/guide"
+            custom:guideShowMode="show_on_touch"
+            custom:guideStrokeWeight="1dp"
+            custom:handleColor="@color/handle"
+            custom:handleShowMode="show_always"
+            custom:handleSize="8dp"
+            custom:minFrameSize="120dp"
+            custom:overlayColor="@color/overlay"
+            custom:touchPadding="8dp" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

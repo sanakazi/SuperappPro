@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGrayLevel4"
+        android:orientation="vertical"
+        android:padding="0.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/requestMoney"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:padding="12dp"
+                android:src="@drawable/close" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_projectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:text="Udibi Project"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <!--Add new transaction layout-->
+                <LinearLayout
+                    android:id="@+id/ll_submitTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightGrayLevel4"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_clientName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:text="Siddhartha Shetty"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:padding="5dp"
+                            android:src="@drawable/call" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Request Money*"
+                            android:textColor="#C0C0C0" />
+
+                        <EditText
+                            android:id="@+id/et_requestMoney"
+                            style="@style/fragmentDashboardInnerEditText"
+                            android:background="@color/white"
+                            android:gravity="left|top"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <RadioButton
+                            android:id="@+id/rbtn_requestMoneyFromClient"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_background"
+                            android:padding="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="Request Money (From Client)"
+                            android:textColor="#C0C0C0" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_addMoneyBypassClient"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:button="@drawable/checkbox_background"
+                            android:padding="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="Add Money (Bypass Client)"
+                            android:textColor="#C0C0C0" />
+
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Description*"
+                            android:textColor="#C0C0C0" />
+
+                        <EditText
+                            android:id="@+id/et_description"
+                            style="@style/fragmentDashboardInnerEditText"
+                            android:background="@color/white"
+                            android:maxLength="500"
+                            android:maxLines="5"
+                            android:minLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView style="@style/fragmentDashboardInnerView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/bt_submitTransactions"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_pressed"
+                            android:text="@string/submit"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--update feedback on transaction-->
+                <LinearLayout
+                    android:id="@+id/ll_feedbackTransactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="and when nothing prevents our of duty or thto be we like best, every pleasure is to be welcomedduty or thcumstances and owing to the claims of duty or thduty or business it will frequently occur that pleasuresduty or cumstance and owing to the claims of duty orduty or the business "
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/requestedMoney"
+                            android:textColor="@color/summerSky"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_requestedMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="2,00,000"
+                            android:textColor="@color/summerSky"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="/-"
+                            android:textColor="@color/summerSky"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bt_reject"
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button_pressed"
+                            android:text="@string/reject"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/bt_accept"
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button_pressed"
+                            android:text="@string/accept"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

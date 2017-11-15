@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGrayLevel4"
+        android:orientation="vertical"
+        android:paddingBottom="0.5dp"
+        android:paddingTop="0.5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_detail_leftArrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_lineOfWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/summerSky"
+                        android:textColorHint="@color/summerSky"
+                        android:textSize="14sp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TableRow android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/startDateAndTime"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_startDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="12/12/11"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_StartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:hint="12.35 PM"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="12sp" />
+
+                        </TableRow>
+
+                        <TableRow android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/endDateAndTime"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_endDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="12/12/12"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_endTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:hint="12.35 PM"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="12sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/tv_lineOfWorkSubCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/summerSky"
+                        android:textColorHint="@color/summerSky"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scheduleDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_leftArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/left_arrow_black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_icon_RightArrow"
+                android:layout_width="0dp"
+                android:layout_height="122dp"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_rightArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right_arrow_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_completeEditDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="30dp"
+                        android:src="@drawable/edit" />
+
+                    <TextView
+                        android:id="@+id/tv_completed"
+                        style="@style/textButton"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@color/summerSky"
+                        android:text="@string/complete"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="30dp"
+                        android:src="@drawable/delete" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
